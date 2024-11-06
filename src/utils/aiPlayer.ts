@@ -25,7 +25,7 @@ export const getAiMove = (
 
   board.some((row, rowIndex) =>
     row.some((col, colIndex) => {
-      if(!board[rowIndex][colIndex]) {
+      if(!col) {
         const clonedBoard = board.map(r => [...r])
 
         clonedBoard[rowIndex][colIndex] = opponent
