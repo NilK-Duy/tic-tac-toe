@@ -10,7 +10,7 @@ export const getAiMove = (
   // Check winning move
   board.forEach((row, rowIndex) =>
     row.map((col, colIndex) => {
-      if(!board[rowIndex][colIndex]) {
+      if(!col) {
         const clonedBoard = board.map(r => [...r])
         clonedBoard[rowIndex][colIndex] = player
         if(checkWinner(clonedBoard) === player) {
@@ -51,7 +51,7 @@ export const getAiMove = (
   const emptyCells: Array<[number, number]> = [];
   board.forEach((row, rowIndex) =>
     row.forEach((col, colIndex) => {
-      if(!board[rowIndex][colIndex]) {
+      if(!col) {
         emptyCells.push([rowIndex, colIndex])
       }
     }
