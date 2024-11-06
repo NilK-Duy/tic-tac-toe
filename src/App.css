@@ -4,3 +4,56 @@
   padding: 2rem;
   text-align: center;
 }
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.board_row {
+  display: flex;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  font-weight: 700;
+  background-color: #0da192;
+  outline: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cell &:hover {
+  color: inherit;
+}
+
+.cell_x {
+  color: #545454;
+}
+
+.cell_o {
+  color: #f2ebd3;
+}
+
+.reset {
+  min-width: 200px;
+  border-radius: 2px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #0da192;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+}
