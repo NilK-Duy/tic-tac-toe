@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* gap: 10px; */
 }
 
 .board_row {
@@ -52,7 +51,7 @@
   cursor: pointer;
   margin-top: 20px;
   background-color: #0da192;
-  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 16px;
   font-weight: 500;
   margin-top: 30px;
